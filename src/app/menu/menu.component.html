@@ -1,0 +1,39 @@
+<mat-drawer-container class="menu-container" autosize>
+    <mat-drawer #drawer class="menu-sidenav" mode="side">
+      
+      
+        <div class = "adminLink">
+            <a href="#">MATERIAL ADMIN</a>
+        </div>
+
+        <mat-list role="list" *ngFor = "let it of items" class = "links">
+                <mat-list-item role="listitem">
+                    <mat-icon>{{it.icon}}</mat-icon>
+                    {{it.name}}
+                </mat-list-item>
+        </mat-list>
+
+        <div class = "upgrateToPro">
+            <button mat-raised-button color="primary">UPGRATE TO PRO</button>
+        </div>
+
+    </mat-drawer>
+
+    
+  
+    <div class="menu-sidenav-content">
+        <mat-icon (click)="drawer.toggle()">menu</mat-icon>
+        <app-header></app-header>
+    </div>
+
+    <app-small-component></app-small-component>
+<div style="display: flex">
+        <app-fourdiv-list></app-fourdiv-list>
+        <app-progress-spiner></app-progress-spiner>
+</div>
+   
+  
+  </mat-drawer-container>
+
+  
+  

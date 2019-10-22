@@ -1,0 +1,18 @@
+.fourdiv{
+    border: 1px solid black;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+}
+.fourdiv .mat-icon{
+    padding: 17px;
+    margin: 4px;
+    color: white;
+}
+
+.nameAndNumber{
+    margin: 0 13px;
+}
+.nameAndNumber h2{
+    font-size: 29px;
+}

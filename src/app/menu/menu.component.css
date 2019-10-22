@@ -1,0 +1,59 @@
+.menu-container {
+    height: 100%;
+    
+}
+
+.menu-sidenav {
+    padding: 20px;
+    
+  }
+  
+ .menu-sidenav-content {
+    display: flex;
+    align-items: center;
+    background-color: rgb(15, 26, 175);
+    font-size: 24px;
+    cursor: pointer;
+    color:white;
+  }  
+
+
+.mat-list-item{
+    cursor: pointer;
+}
+.links .mat-icon{
+    color:black;
+}
+
+
+.adminLink{
+    padding: 0  0 14px 0;
+    margin-bottom: 11px;
+    border-bottom: 1px solid black;
+  }
+  .adminLink a{
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .links{
+    display: flex;
+  }
+
+.mat-list-item .mat-icon{
+    padding: 0 6px;
+  }
+
+  .upgrateToPro{
+      text-align: center;
+    padding: 10px 13px;
+    margin-top: 11px;
+    color: white;
+    
+  }
+  .upgrateToPro button{
+      background-color: rgb(0, 0, 75);
+      font-size: 13px;
+  }
