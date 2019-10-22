@@ -1,0 +1,13 @@
+.footer{
+    margin-top: 15px;
+    background-color: rgb(236, 235, 235);
+}
+.twoP{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+mat-icon{
+    color: red;
+    font-size: 17px;
+}

@@ -1,0 +1,40 @@
+
+.imgName{
+    padding: 11px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    height: 50px;
+    border-radius: 50%;
+    padding:13px;
+}
+mat-icon{
+    font-size: 32px;
+    color: rgb(4, 4, 194);
+    margin: 0 14px;
+    cursor: pointer;
+}
+.text{
+    padding: 11px;
+}
+
+.lists{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: rgb(4, 4, 194);
+}
+.lists p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.forFlex{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    border: 1px solid black;
+
+}

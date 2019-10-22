@@ -1,0 +1,11 @@
+.table{
+    margin-top: 11px;
+    display: flex;
+    justify-content: center;
+}
+.border{
+    border: 1px solid black;
+}
+img{
+    width: 100%;
+}

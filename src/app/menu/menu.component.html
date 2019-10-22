@@ -7,10 +7,13 @@
         </div>
 
         <mat-list role="list" *ngFor = "let it of items" class = "links">
-                <mat-list-item role="listitem">
-                    <mat-icon>{{it.icon}}</mat-icon>
-                    {{it.name}}
-                </mat-list-item>
+            <button (click) = "isOn = true">
+                    <mat-list-item role="listitem" >
+                            <mat-icon>{{it.icon}}</mat-icon>
+                            {{it.name}}
+                        </mat-list-item>
+            </button>
+                
         </mat-list>
 
         <div class = "upgrateToPro">
@@ -26,12 +29,23 @@
         <app-header></app-header>
     </div>
 
-    <app-small-component></app-small-component>
-<div style="display: flex">
+    <app-small-component *ngIf="!isOn"></app-small-component>
+
+<div style="display: flex;justify-content:center;" *ngIf="!isOn">
         <app-fourdiv-list></app-fourdiv-list>
         <app-progress-spiner></app-progress-spiner>
+       
 </div>
-   
+
+<div style="display: flex;justify-content:center; margin-top: 31px;" *ngIf="!isOn">
+
+    <app-user></app-user>
+    <app-graph></app-graph>
+
+</div>
+<app-table *ngIf="!isOn"></app-table>
+
+<app-footer></app-footer>
   
   </mat-drawer-container>
 

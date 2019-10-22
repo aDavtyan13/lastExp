@@ -36,6 +36,10 @@ export class MenuComponent implements OnInit {
   }
 ];
 
+
+public user;
+
+
   constructor() { }
 
   ngOnInit() {

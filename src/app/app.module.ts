@@ -15,6 +15,11 @@ import { FourdivListComponent } from './fourdiv-list/fourdiv-list.component';
 import { FourdivComponent } from './fourdiv/fourdiv.component';
 import { ProgressSpinerComponent } from './progress-spiner/progress-spiner.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { UserComponent } from './user/user.component';
+import { GraphComponent } from './graph/graph.component';
+import { TableComponent } from './table/table.component';
+import { FooterComponent } from './footer/footer.component';
+import { SwitchComponent } from './switch/switch.component';
 
 
 
@@ -28,7 +33,12 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     SmallComponentComponent,
     FourdivListComponent,
     FourdivComponent,
-    ProgressSpinerComponent
+    ProgressSpinerComponent,
+    UserComponent,
+    GraphComponent,
+    TableComponent,
+    FooterComponent,
+    SwitchComponent
   ],
   imports: [
     BrowserModule,
