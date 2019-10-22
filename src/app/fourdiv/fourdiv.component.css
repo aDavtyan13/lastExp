@@ -3,6 +3,7 @@
     padding: 11px;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 .fourdiv .mat-icon{
     padding: 17px;

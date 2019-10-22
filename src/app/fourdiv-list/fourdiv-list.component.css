@@ -1,7 +1,10 @@
 .divs{
     display: flex;
-    margin: 17px;
-    flex-wrap: wrap;
-    
-    
+    /* margin: 17px; */
+    flex-wrap: wrap;  
+    justify-content: space-around;
+}
+app-fourdiv{
+    width: 47%;
+    margin-bottom: 10px
 }
