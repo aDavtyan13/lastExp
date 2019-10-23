@@ -49,13 +49,21 @@
     display: flex;
   }
 
-.mat-list-item mat-icon{
-    padding: 0 6px;
-  }
+mat-list{
+  padding: 0 20px;
+}
 
+.mat-list-item-content{
+  padding: 0 13px;
+}
   .mat-list button{
       width: 100%;
+      margin: 4px 0;
   }
+
+mat-drawer{
+  width: 20%;
+}
 
   .upgrateToPro{
       text-align: center;
@@ -74,11 +82,25 @@
   }
 
 
-  @media(max-width:792px) and (min-width:0px){
+  @media(max-width:792px){
     .name{
       display: none;
     }
+    mat-drawer{
+      width: 20%;
+    }
     .mat-list button{
+      width: 100%;
+
+  }
+    /* .mat-list button{
       width: 50%;
+    } */
+  
+  }
+
+  @media(max-width:1200px){
+    mat-drawer{
+      width: 30%;
     }
   }
