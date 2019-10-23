@@ -1,0 +1,29 @@
+<div class="radio">
+       
+        <div class = "radioDiv">
+            <div>
+                <h3>Radio</h3>
+            </div>
+    
+            <div class="items">
+    
+                <mat-radio-group>
+
+                    <mat-radio-button  *ngFor="let radio of radios" [value]="radio">
+                        {{radio}}
+                    </mat-radio-button>
+
+              </mat-radio-group>
+
+
+              <mat-radio-group class = "dam">
+                <mat-radio-button color = "primary"  *ngFor="let custom of customRadios" [value]="custom">
+                    {{custom}}
+                </mat-radio-button>
+                </mat-radio-group>
+                
+            </div>
+           
+        </div>
+    </div>
+    

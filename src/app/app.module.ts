@@ -28,12 +28,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material';
-
-
-
-
-
-
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
+import { RadioComponent } from './radio/radio.component';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 
@@ -52,7 +52,9 @@ import {MatNativeDateModule} from '@angular/material';
     FooterComponent,
     SwitchComponent,
     SelectmenuComponent,
-    TextfieldComponent
+    TextfieldComponent,
+    CheckboxComponent,
+    RadioComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +69,11 @@ import {MatNativeDateModule} from '@angular/material';
     MatFormFieldModule,
     MatInputModule,
     MatDatepickerModule,
-    MatNativeDateModule 
+    MatNativeDateModule ,
+    MatCheckboxModule,
+    FormsModule,
+    MatRadioModule,
+    MatMenuModule
 
   ],
   providers: [],

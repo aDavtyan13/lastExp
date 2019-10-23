@@ -14,10 +14,18 @@
     background-color: rgb(15, 26, 175);
     font-size: 24px;
     cursor: pointer;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     color:white;
   }  
 
+  app-switch{
+    width: 100%;
+    margin: 13px;
+  }
+  app-selectmenu{
+    width: 100%;
+    margin: 13px;
+  }
 
 
 .links mat-icon{
@@ -28,7 +36,7 @@
 .adminLink{
     padding: 0  0 14px 0;
     margin-bottom: 11px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid gray;
   }
   .adminLink a{
     color: black;
@@ -63,4 +71,14 @@
 
   .menu-sidenav-content mat-icon{
     margin-left: 9px;
+  }
+
+
+  @media(max-width:792px) and (min-width:0px){
+    .name{
+      display: none;
+    }
+    .mat-list button{
+      width: 50%;
+    }
   }

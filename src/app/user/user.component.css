@@ -34,7 +34,7 @@ mat-icon{
 .forFlex{
     display: flex;
     flex-direction: column;
-    width: 65%;
-    border: 1px solid black;
+   
+    border: 1px solid gray;
 
 }

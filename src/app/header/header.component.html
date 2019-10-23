@@ -1,12 +1,31 @@
-     <div class="headerDiv">
+    <div class="headerDiv">
         <div class="menuAndInput">
             <input type="text" placeholder="Search anything...">    
         </div>
         
-        <div style="float: right" class="threeIcons">
-            <mat-icon>notifications</mat-icon>
-            <mat-icon>widgets</mat-icon>
-            <mat-icon>more_vert</mat-icon>
+        <div class="threeIcons">
+           
+                <mat-icon>notifications</mat-icon>
+                <mat-icon>widgets</mat-icon>
+
+                <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+
+               <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                        <mat-icon style="color: black">settings</mat-icon>
+                        <span>Settings</span>
+                    </button>
+
+                    <button mat-menu-item>
+                        <mat-icon style="color: black">https</mat-icon>
+                        <span>Logout</span>
+                    </button>
+                    
+                </mat-menu>
+                      
+           
         </div>
      </div>
     

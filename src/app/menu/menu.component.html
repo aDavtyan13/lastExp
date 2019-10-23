@@ -7,10 +7,10 @@
         </div>
 
         <mat-list role="list" *ngFor = "let it of items" class = "links">
-            <button (click) = "isOn = true">
+            <button (click) = "isOn(it.name)" class = "mediaButton">
                     <mat-list-item role="listitem" >
                             <mat-icon>{{it.icon}}</mat-icon>
-                            {{it.name}}
+                            <p class = "name">{{it.name}}</p>
                         </mat-list-item>
             </button>
                 
@@ -26,34 +26,38 @@
   
     <div class="menu-sidenav-content">
         <mat-icon (click)="drawer.toggle()">menu</mat-icon>
-        <app-header></app-header>
+        <app-header style="width: 100%"></app-header>
     </div>
 
-    <app-small-component *ngIf="!isOn"></app-small-component>
+    <app-small-component *ngIf="!open"></app-small-component>
 
-<div style="display: flex;justify-content:center;" *ngIf="!isOn">
+<div style="display: flex;justify-content:center;flex-wrap: wrap" *ngIf="!open">
         <app-fourdiv-list></app-fourdiv-list>
         <app-progress-spiner></app-progress-spiner>
        
 </div>
 
-<div style="display: flex;justify-content:center; margin-top: 31px;" *ngIf="!isOn">
+<div style="display: flex;justify-content:center; margin-top: 31px;" *ngIf="!open">
 
-    <app-user></app-user>
-    <app-graph></app-graph>
+    <app-user style="width: 60%;margin:24px;"></app-user>
+    <app-graph style="width: 100%;margin:24px;"></app-graph>
 
 </div>
-<app-table *ngIf="!isOn"></app-table>
+<app-table *ngIf="!open"></app-table>
 
 
 
 
-<div style="display: flex;justify-content:space-around; margin-top: 31px;" *ngIf="isOn">
+<div style="display: flex;justify-content:space-around; margin-top: 31px;" *ngIf="open">
     <app-switch></app-switch>
     <app-selectmenu></app-selectmenu>
 </div>
 
-<app-textfield *ngIf="isOn"></app-textfield>
+<app-textfield *ngIf="open"></app-textfield>
+
+<app-checkbox *ngIf="open"></app-checkbox>
+
+<app-radio *ngIf="open"></app-radio>
 
 
 <app-footer></app-footer>

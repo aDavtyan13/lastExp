@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Button } from 'protractor';
 // import {Item} from '../item.interface';
 
 @Component({
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+
+  public open = false;
+  
 
   items = [{
     icon: 'desktop_windows',
@@ -37,12 +41,23 @@ export class MenuComponent implements OnInit {
 ];
 
 
-public user;
+// openForm(){
 
+//     alert();
+// 
 
-  constructor() { }
+constructor() { }
 
   ngOnInit() {
+  }
+
+  isOn(elem){
+    if(elem=='Forms'){
+      this.open = true;
+    }
+    else if(elem=='Dashboard'){
+      this.open = false;
+    }
   }
 
 }

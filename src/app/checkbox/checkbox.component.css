@@ -1,0 +1,23 @@
+::ng-deep .dam .mat-checkbox-frame {
+    border-color: green !important;
+  }
+
+::ng-deep .dam .mat-checkbox-checked .mat-checkbox-background {
+    background-color: darkcyan !important;
+  }
+
+.mat-checkbox{
+    margin: 6px;
+}
+
+.checkbox{
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+}
+
+.checkboxDiv{
+    padding: 13px;
+    border: 1px solid gray;
+    width: 90%;
+}

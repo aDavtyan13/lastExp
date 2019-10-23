@@ -7,8 +7,8 @@
 
 .textFieldDiv{
     padding: 13px;
-    border: 1px solid black;
-    width: 80%;
+    border: 1px solid gray;
+    width: 90%;
 }
 .divv{
     display: flex;

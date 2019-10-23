@@ -2,7 +2,7 @@
     display: flex;
 }
 .graphImg{
-    border:1px solid black;
+    border:1px solid gray;
 }
 img{
     width: 100%;
