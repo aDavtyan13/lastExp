@@ -18,3 +18,10 @@
 mat-form-field{
     margin: 0 11px;
 }
+
+@media (max-width:792px){
+    .divv{
+        display: flex;
+        flex-direction: column;
+    }
+}

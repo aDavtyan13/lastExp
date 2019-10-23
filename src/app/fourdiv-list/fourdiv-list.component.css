@@ -8,3 +8,9 @@ app-fourdiv{
     width: 40%;
     margin-bottom: 10px;
 }
+
+@media(max-width: 972px){
+    .divs{
+        width: 100%;
+    }
+}

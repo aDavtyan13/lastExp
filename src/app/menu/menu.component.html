@@ -7,12 +7,12 @@
         </div>
 
         <mat-list role="list" *ngFor = "let it of items" class = "links">
-            <button (click) = "isOn(it.name)" class = "mediaButton">
-                    <mat-list-item role="listitem" >
+    
+                    <mat-list-item role="listitem" (click) = "isOn(it.name)" class = "mediaButton">
                             <mat-icon>{{it.icon}}</mat-icon>
                             <p class = "name">{{it.name}}</p>
                         </mat-list-item>
-            </button>
+            
                 
         </mat-list>
 
@@ -49,8 +49,8 @@
 
 
 <div style="display: flex;justify-content:space-around; margin-top: 31px;" *ngIf="open">
-    <app-switch></app-switch>
-    <app-selectmenu></app-selectmenu>
+    <app-switch style="width: 80%;"></app-switch>
+    <app-selectmenu style="width: 80%;"></app-selectmenu>
 </div>
 
 <app-textfield *ngIf="open"></app-textfield>

@@ -27,6 +27,11 @@
     margin: 13px;
   }
 
+mat-list-item{
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+}
 
 .links mat-icon{
     color:black;
@@ -37,6 +42,8 @@
     padding: 0  0 14px 0;
     margin-bottom: 11px;
     border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: center;
   }
   .adminLink a{
     color: black;
@@ -50,16 +57,11 @@
   }
 
 mat-list{
-  padding: 0 20px;
+  display: flex;
+  padding: 0 10px;
+  justify-content: center;
 }
 
-.mat-list-item-content{
-  padding: 0 13px;
-}
-  .mat-list button{
-      width: 100%;
-      margin: 4px 0;
-  }
 
 mat-drawer{
   width: 20%;
@@ -93,9 +95,12 @@ mat-drawer{
       width: 100%;
 
   }
-    /* .mat-list button{
-      width: 50%;
-    } */
+   .adminLink a{
+      display: none;
+    }
+    .mat-list-item-content{
+      padding: 0 !important;
+    }
   
   }
 
@@ -103,4 +108,5 @@ mat-drawer{
     mat-drawer{
       width: 30%;
     }
+   
   }
