@@ -45,6 +45,17 @@
 </div>
 <app-table *ngIf="!isOn"></app-table>
 
+
+
+
+<div style="display: flex;justify-content:space-around; margin-top: 31px;" *ngIf="isOn">
+    <app-switch></app-switch>
+    <app-selectmenu></app-selectmenu>
+</div>
+
+<app-textfield *ngIf="isOn"></app-textfield>
+
+
 <app-footer></app-footer>
   
   </mat-drawer-container>

@@ -1,1 +1,21 @@
-<p>switch works!</p>
+<div class="switch">
+    <div class="switchDiv">
+        <h3>Switch</h3>
+       
+        <div class="switches">
+
+            <mat-slide-toggle
+                [color]="color"
+                [checked]="checked"
+                [disabled]="disabled">
+            </mat-slide-toggle>
+
+            <mat-slide-toggle
+                [disabled]="isDisabled"
+                [color]="color"
+                [checked]="checked"
+                [disabled]="disabled" >
+            </mat-slide-toggle>
+        </div>
+    </div>
+</div>

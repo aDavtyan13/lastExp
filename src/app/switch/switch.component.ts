@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-switch',
@@ -6,6 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./switch.component.css']
 })
 export class SwitchComponent implements OnInit {
+
+  @Input() disabled: boolean 
+
+  isDisabled  = true;
+  color = 'primary';
+
+
+  
 
   constructor() { }
 

@@ -1,0 +1,10 @@
+
+.switchDiv{
+    padding: 13px;
+    display: flex;
+    border: 1px solid black;
+}
+
+mat-slide-toggle{
+    margin: 51px 37px 17px;
+}

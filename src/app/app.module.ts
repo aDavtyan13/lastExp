@@ -20,6 +20,18 @@ import { GraphComponent } from './graph/graph.component';
 import { TableComponent } from './table/table.component';
 import { FooterComponent } from './footer/footer.component';
 import { SwitchComponent } from './switch/switch.component';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { SelectmenuComponent } from './selectmenu/selectmenu.component';
+import {MatSelectModule} from '@angular/material/select';
+import { TextfieldComponent } from './textfield/textfield.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material';
+
+
+
+
 
 
 
@@ -38,7 +50,9 @@ import { SwitchComponent } from './switch/switch.component';
     GraphComponent,
     TableComponent,
     FooterComponent,
-    SwitchComponent
+    SwitchComponent,
+    SelectmenuComponent,
+    TextfieldComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +61,14 @@ import { SwitchComponent } from './switch/switch.component';
     MatIconModule,
     MatListModule,
     MatButtonModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatSlideToggleModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule 
+
   ],
   providers: [],
   bootstrap: [AppComponent]

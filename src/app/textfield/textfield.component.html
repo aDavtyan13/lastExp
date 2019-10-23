@@ -1,0 +1,19 @@
+<div class="textField">
+       
+        <div class = "textFieldDiv">
+            <div>
+                <h3>Text Field</h3>
+            </div>
+           <div class="divv">
+                <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Input Name" required>
+                    </mat-form-field>
+        
+                    <mat-form-field>
+                        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+           </div>
+        </div>
+</div>
